@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     
+      <h1 data-text="HAPPY BIRTHDAY"><span style="border-style: dashed; border-color: #0fe897; margin-bottom: 900px;">HAPPY BIRTHDAY</span></h1>
+        <style>
+           h1{
+            margin-left: 40%;
+            align-items:first baseline;
+            color: black;
+            border-color:aqua;
+            font-size: xx-large;
+            position: relative;
+            font-family: Arial, Helvetica, sans-serif;
+            -webkit-text-stroke: 0.3uv #ad67eb;
+            text-transform: uppercase;
+            font-size: 400%;
+            margin-bottom: 600px ;
+            margin-right: 100px;
+
+}  
+h1::before{
+            content: attr(data-text);
+            top: 0%;
+            bottom: 0%;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            color: #ad67eb;
+            -webkit-text-stroke: #232839;
+            border-right: 5px #0fe897;
+            overflow: hidden;
+            animation: animate 6s infinite;
+           
+          }
+          @keyframes animate{
+            0%,100%{
+                width: 0%;
+            }
+            90%,100%{
+                width: 100%;
+            }
+          }
+    
+    
+    
+         body{
+          margin-right: 800px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+         background-image: url(Jason/1676290124693.jpg);
+          margin-right: 500px;
+         }
+       
+       .birthdaycard{
+        margin-left: 100px;
+        margin-right: 900px;
+        position: relative;
+        width: 250px;
+        height: 350px;
+        cursor: pointer;
+        transform-style: preserve-3d;
+        transform: perspective(2500px);
+        transform: 1s;
+       }
+      .birthdaycard:hover {
+        transform: perspective(2500px) rotate(5deg);
+        box-shadow: inset 100px 20px 100px rgb(0,0,0,0.2),
+        0 10px 100px rgba(0,0,0,0.5);
+      }
+      .birthdaycard:hover .cardfront{
+        transform: rotateY(-160deg);
+      }
+      .birthdaycard:hover .happy{
+        visibility: hidden;
+      }
+      .cardfront{
+        position: relative;
+        background-color: #d76f3b;
+        width: 250px;
+        height: 350px;
+        overflow: hidden;
+        transform-origin: left;
+        box-shadow: inset 100px 20px 100px rgb(0,0,,0.2),
+        30px 0px 50px rgba(0,0,0,0.4);
+        transition: 0.6s;
+      
+    }
+    .happy{
+      font-family: Tahoma, sans-serif;
+      text-transform: uppercase;
+      text-align: center;
+      background-image: linear-radient(120 deg,#ffd856 0%,#f98c6e 100%);
+      margin: 30px;
+      transition : 0.1s;
+      color:#3fa4be;
+
+    }
+    .balloon{
+      position: absolute;
+    }
+    .balloon-1,
+    .balloon-2,
+    .balloon-3,
+    .balloon-4{
+      position: absolute;
+      width: 85px;
+      height: 95px;
+      border-radius: 50px;
+    }
+    .balloon-1{
+background-color: rgba(255,40,90, 0.7);
+left: -10px;
+top: 50px;
+    }
+    .balloon-2{
+      background-color: rgba(9,215,160,0.7);
+      left: 50px;
+      top: 20px;
+    }
+    .balloon-3{
+      background-color: rgba(255,186,26,0.7);
+      left: 110px;
+      top: 50px;
+    }
+    .balloon-4{
+      background-color: rgba(12,122,159,0.7);
+      left: 170px;
+      top: 50px;
+    }
+    .balloon-1::before,
+    .balloon-2::before,
+    .balloon-3::before,
+    .balloon-3::before,
+    .balloon-4::before{
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 155px;
+      background-color: #ffc848;
+      top: 95px;
+      left: 43px;
+    }
+    .balloon-1::after,
+    .balloon-2::after,
+    .balloon-3::after,
+    .balloon-3::after,
+    .balloon-4::after{
+      content: "";
+      position: absolute;
+      border-right: 7px solid transparent;
+      border-left: 7px solid transparent;
+      top: 94px;
+      left: 37px;
+    } 
+    .balloon-1{
+      border-bottom: 10px solid #ff3e6b;
+      margin-top: 50px;
+    }
+    .balloon-2{
+      border-bottom: 10px solid #04b183;
+      margin-top: 40px;
+    }
+    .balloon-3{
+      border-bottom: 10px solid #ffc94c;
+      margin-top: 45px;
+    }
+    .balloon-4{
+      border-bottom: 10px solid #13a9bd;
+      margin-top: 30px;
+    }
+    .cardInside{
+      position: absolute;
+      background-color:#13a9bd;
+      width: 250px;
+      height: 350px;
+      z-index: -1;
+      left: 0;
+      top: 0;
+      box-shadow: inset 100px 20px 100px rgba(0,0,0,0.2)); 
+    }
+    p{
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif,cursive;
+      margin: 40px;
+      color: #333;
+    }
+    .name{
+      position: absolute;
+      left: 150px;
+      top: 200px;
+      color: #333;
+      margin-top: 100px;
+    }
+    .back{
+      font-family: Tahoma, sans-serif;
+      color: #1d1e1a;
+       text-align: center;
+      margin: 30px;
+      outline-color: #333;
+      outline-style: dotted;
+    }
+        
+            
+
+
+          }
+          body{
+           
+            background-image: url(Jason/1676290124693.jpg);
+          }
+          .jason{
+            font-size: 300%;
+          }
+           
+         
+        </style>
+    </head>
+    
+    <body bgcolor="#232839">       
+      <h1 class="jason" style="color: #270111; margin-top: 500px; width: 10x; height: 10px; font: size 20%; ;">click here ></h1>
+        <div class="birthdaycard" >
+          <div class="cardfront">
+            <h3 class="happy">HAPPY BIRTHDAY!!</h3>
+            <div class="balloons">
+              <div class="balloon-1"></div>
+              <div class="balloon-2"></div>
+              <div class="balloon-3"></div>
+              <div class="balloon-4"></div>
+            </div>
+          </div>
+        <div class="cardInside">
+          <h3 class="back">HAPPY BIRTHDAY!!</h3>
+          <p>DEAR PRITHINA,</p>
+          <p style= "text-align: center;">
+             Wish you a very Happy Happy birthday Prithina!!
+          </p>
+          <p style="margin-bottom: 900px;">
+            <img src="Jason/fx.jpg"width="110px" height="115px ">
+          </p>
+        <br> <p class="name">
+          - Jason
+        </p>
+      </br>
+        </div>
+        </div>
+        
+        </div>
+    </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<style>
+    h1{
+        
+        position: relative;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-transform: uppercase;
+        margin-left: 40%;
+        -webkit-text-stroke: 0.3uv #232839;
+        color: #0fe897;
+        text-align: left;
+        font-size: 500%;
+        border-style:dashed;
+        width: 296px;
+
+    }
+    h1::before{
+        content: attr(data-text);
+        top: 0%;
+        bottom: 0%;
+        width: 100%;
+        height: 100%;
+       color: rgb(155, 177, 236);
+        -webkit-text-stroke: #232839;
+        border-right: 0px #0fe897;
+        overflow: hidden;
+        position: absolute;
+        animation: animate 6s infinite;
+        text-decoration: wavy;
+        border-style: #0fe897;
+        
+    }
+    table{
+        width: 70%;
+        height: 500%;
+        margin-left: 150px;
+    }
+   table, th, td {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+  height: 100px;
+}
+    @keyframes animate{
+        0%,10%,100%{
+         width: 0%;
+        }
+    100%{
+            width: 100%;
+        }
+    }
+    body{
+        background-image: url(https://th.bing.com/th/id/R.a404bc52f912d25a8d33559f83f86f95?rik=M26USpAcDBhWcg&riu=http%3a%2f%2fwww.sourcecodester.com%2fsites%2fdefault%2ffiles%2fimages%2fGeePee%2fscreenshot_52.jpg&ehk=2oR9bagiZPWCyKAx8Wbl9xb34MIj%2fCzeyX1bLTcpN%2f8%3d&risl=&pid=ImgRaw&r=0);
+        background-repeat: repeat-x;   
+   }
+   h2{
+    background-color: #232839;
+    color: #0fe897;
+    padding: 10px;
+    width: 25%;
+    margin-left: 150px;
+   }
+</style>
+    </head>
+    <body bgcolor="#232839">
+        <h1 data-text="JASON">JASON</h1>
+        <h2>JASON HOW ARE YOU!!!</h2>
+        <table border="5" style="color: #0fe897; border-color: aqua; padding: 10px;">
+            <thead style="padding: 10px;">
+                <th>S.NO</th>
+               <th>JASON</th>
+               <th>SELVA</th>
+               <th>KUMAR</th>
+            </thead>
+            <tbody style="padding: 10px;">
+                <td>1 .</td>
+                <td>briyani</td>
+                <td>rice</td>
+                <td>mushroom</td>
+
+
+            </tbody>
+            <tfoot style="padding: 10px;">
+            <td>Total</td>
+            <td colspan="3">
+                JASON WINNER!!!!
+            </td>
+            
+
+            </tfoot>
+        </table>
+    </body>
+</html>
